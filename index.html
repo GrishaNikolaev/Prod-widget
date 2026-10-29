@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Продовое окружение</title>
+    <title>Тестовое окружение</title>
     <style>
         * {
             margin: 0;
@@ -35,7 +35,7 @@
         }
         .env-badge {
             display: inline-block;
-            background: #dc3545;
+            background: #f59e0b;
             color: white;
             font-size: 12px;
             font-weight: bold;
@@ -79,7 +79,7 @@
             width: 10px;
             height: 10px;
             border-radius: 50%;
-            background: #28a745;
+            background: #f59e0b;
             margin-right: 8px;
             animation: pulse 2s infinite;
         }
@@ -92,9 +92,9 @@
 </head>
 <body>
     <div class="container">
-        <span class="env-badge">🚀 PRODUCTION HU-LI WIDGET</span>
-        <h1>Продовое окружение</h1>
-        <p>Страница создана для тестирования работы виджета в продакшн-окружении</p>
+        <span class="env-badge">🧪 STAGING HU-LI WIDGET</span>
+        <h1>Тестовое окружение</h1>
+        <p>Страница создана для тестирования работы виджета в staging-окружении</p>
         <div class="widget-placeholder" id="widget-container">
             <span class="label">⬇️ Виджет загружается...</span>
             <div class="divider"></div>
@@ -113,10 +113,10 @@
             js.src = f;
             js.async = 1;
             fjs.parentNode.insertBefore(js, fjs);
-        }(window, document, 'script', '_hw', 'https://widget.hu-li.com/loader/loader.js'));
+        }(window, document, 'script', '_hw', 'https://widget-stage.hu-li.com/loader/loader.js'));
 
         _hw('init', {
-            agentId: 'bfeac107-b14f-4599-a932-5ca398ecc686',
+            agentId: '380c703f-a2e5-40f3-adf5-35e3117c0de9',
         });
     </script>
 
@@ -127,8 +127,8 @@
                 container.innerHTML = `
                     <span class="label">✅ Виджет загружен</span>
                     <div class="divider"></div>
-                    <span style="font-size: 14px; color: #2e7d32;">
-                        <span class="status-indicator"></span> Робот работает
+                    <span style="font-size: 14px; color: #b45309;">
+                        <span class="status-indicator"></span> Робот работает (staging)
                     </span>
                 `;
             }
